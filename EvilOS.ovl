@@ -1,0 +1,2344 @@
+[Master]
+Implementation=2
+FontFace=JetBrainsMono NF
+FontHeight=-11
+FontWeight=700
+ZoomRatio=2
+[Settings]
+Name=EvilOS
+RefreshPeriod=1000
+LockUserSettings=1
+EmbeddedImage=EvilOS.png
+[General]
+Sources=93
+Tables=0
+Layers=143
+[Source0]
+Name=CPU usage
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source1]
+Name=CPU clock
+Units=MHz
+Format=%.0f
+Formula=
+Provider=HAL
+ID=CPU clock
+[Source2]
+Name=GPU1 usage
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source3]
+Name=GPU1 clock
+Units=MHz
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 clock
+[Source4]
+Name=GPU1 memory usage
+Units=GB
+Format=%.1f
+Formula=x / 1024
+Provider=HAL
+ID=GPU1 memory usage
+[Source5]
+Name=GPU1 memory usage percent
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 memory usage percent
+[Source6]
+Name=GPU1 total memory
+Units=GB
+Format=%.0f
+Formula=x / 1024
+Provider=HAL
+ID=GPU1 total memory
+[Source7]
+Name=GPU1 fan speed
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 fan speed
+[Source8]
+Name=GPU1 fan tachometer
+Units=RPM
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 fan tachometer
+[Source9]
+Name=RAM usage percent
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=RAM usage percent
+[Source10]
+Name=Mode V
+Units=
+Format=
+Formula=(key(145) % 2) == 0
+Provider=HAL
+ID=Stub
+[Source11]
+Name=Mode H
+Units=
+Format=
+Formula="Mode V" == 0
+Provider=HAL
+ID=Stub
+[Source12]
+Name=RAM clock
+Units=MT/s
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=RAM clock
+[Source13]
+Name=UPS input voltage
+Units=V
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=UPS input voltage
+[Source14]
+Name=UPS load
+Units=%
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=UPS load
+[Source15]
+Name=UPS power
+Units=W
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=UPS power
+[Source16]
+Name=UPS battery
+Units=%
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=UPS battery
+[Source17]
+Name=UPS runtime
+Units=min
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=UPS runtime
+[Source18]
+Name=UPS on battery
+Units=
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=UPS on battery
+[Source19]
+Name=CPU temp
+Units=C
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=CPU temp
+[Source20]
+Name=CPU power
+Units=W
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=CPU power
+[Source21]
+Name=GPU temp
+Units=C
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=GPU temp
+[Source22]
+Name=GPU hotspot
+Units=C
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=GPU hotspot
+[Source23]
+Name=VRAM temp
+Units=C
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=VRAM temp
+[Source24]
+Name=GPU power
+Units=W
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=GPU power
+[Source25]
+Name=RAM temp
+Units=C
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=RAM temp
+[Source26]
+Name=MB temp
+Units=C
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=MB temp
+[Source27]
+Name=CPU fan rpm
+Units=RPM
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=CPU fan rpm
+[Source28]
+Name=SYS fan rpm
+Units=RPM
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=SYS fan rpm
+[Source29]
+Name=GPU lim power
+Units=
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=GPU lim power
+[Source30]
+Name=GPU lim thermal
+Units=
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=GPU lim thermal
+[Source31]
+Name=GPU lim volt
+Units=
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=GPU lim volt
+[Source32]
+Name=Disk rate
+Units=MB/s
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Disk rate
+[Source33]
+Name=Disk active
+Units=%
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Disk active
+[Source34]
+Name=Disk temp
+Units=C
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Disk temp
+[Source35]
+Name=Ping ms
+Units=ms
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Ping ms
+[Source36]
+Name=Ping jitter
+Units=ms
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Ping jitter
+[Source37]
+Name=Ping loss
+Units=%
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Ping loss
+[Source38]
+Name=EvilOS status
+Units=
+Format=%.0f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=EvilOS status
+[Source39]
+Name=Net down
+Units=Mb/s
+Format=%.1f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Net down
+[Source40]
+Name=Net up
+Units=Mb/s
+Format=%.1f
+Formula=
+Provider=MSI Afterburner
+SrcId=FFFFFFFF
+Gpu=FFFFFFFF
+SrcName=Net up
+[Source41]
+Name=Fan anim CPU
+Units=
+Format=
+Formula=("CPU fan rpm" * x / 66667) % 8
+Provider=HAL
+ID=Timer
+[Source42]
+Name=Fan anim SYS
+Units=
+Format=
+Formula=("SYS fan rpm" * x / 66667) % 8
+Provider=HAL
+ID=Timer
+[Source43]
+Name=Fan anim GPU
+Units=
+Format=
+Formula=("GPU1 fan tachometer" * x / 66667) % 8
+Provider=HAL
+ID=Timer
+[Source44]
+Name=Alert batt
+Units=
+Format=
+Formula="UPS on battery" > 0
+Provider=HAL
+ID=Stub
+[Source45]
+Name=Alert cpu
+Units=
+Format=
+Formula="CPU temp" > 90
+Provider=HAL
+ID=Stub
+[Source46]
+Name=Alert gpu
+Units=
+Format=
+Formula=("GPU temp" > 85) + ("GPU hotspot" > 100) > 0
+Provider=HAL
+ID=Stub
+[Source47]
+Name=Alert loss
+Units=
+Format=
+Formula="Ping loss" > 5
+Provider=HAL
+ID=Stub
+[Source48]
+Name=Alert ram
+Units=
+Format=
+Formula="RAM usage percent" > 95
+Provider=HAL
+ID=Stub
+[Source49]
+Name=Alert any
+Units=
+Format=
+Formula=("Alert batt" + "Alert cpu" + "Alert gpu" + "Alert loss" + "Alert ram") > 0
+Provider=HAL
+ID=Stub
+[Source50]
+Name=Lim T
+Units=
+Format=
+Formula="GPU lim thermal" > 0
+Provider=HAL
+ID=Stub
+[Source51]
+Name=Lim P
+Units=
+Format=
+Formula=("GPU lim power" > 0) * ("GPU lim thermal" == 0)
+Provider=HAL
+ID=Stub
+[Source52]
+Name=Lim V
+Units=
+Format=
+Formula=("GPU lim volt" > 0) * ("GPU lim power" == 0) * ("GPU lim thermal" == 0)
+Provider=HAL
+ID=Stub
+[Source53]
+Name=Status ok
+Units=
+Format=
+Formula="EvilOS status" == 2
+Provider=HAL
+ID=Stub
+[Source54]
+Name=Status warn
+Units=
+Format=
+Formula="EvilOS status" == 1
+Provider=HAL
+ID=Stub
+[Source55]
+Name=CPU warn
+Units=
+Format=
+Formula="CPU temp" > 75
+Provider=HAL
+ID=Stub
+[Source56]
+Name=GPU warn
+Units=
+Format=
+Formula=("GPU temp" > 72) + ("GPU hotspot" > 88) > 0
+Provider=HAL
+ID=Stub
+[Source57]
+Name=RAM warn
+Units=
+Format=
+Formula="RAM usage percent" > 80
+Provider=HAL
+ID=Stub
+[Source58]
+Name=VRAM warn
+Units=
+Format=
+Formula=("GPU1 memory usage percent" > 85) + ("VRAM temp" > 90) > 0
+Provider=HAL
+ID=Stub
+[Source59]
+Name=DISK warn
+Units=
+Format=
+Formula=("Disk temp" > 60) + ("Disk active" > 90) > 0
+Provider=HAL
+ID=Stub
+[Source60]
+Name=Blink
+Units=
+Format=
+Formula=("Alert any" > 0) * ((x % 1000) < 500)
+Provider=HAL
+ID=Timer
+[Source61]
+Name=Blink batt
+Units=
+Format=
+Formula=("Alert batt" > 0) * ((x % 1000) < 500)
+Provider=HAL
+ID=Timer
+[Source62]
+Name=CPU hot pulse
+Units=
+Format=
+Formula=("CPU temp" > 85) * ((x % 800) < 400)
+Provider=HAL
+ID=Timer
+[Source63]
+Name=GPU hot pulse
+Units=
+Format=
+Formula=(("GPU temp" > 80) + ("GPU hotspot" > 95) > 0) * ((x % 800) < 400)
+Provider=HAL
+ID=Timer
+[Source64]
+Name=Blink batt @V
+Units=
+Format=
+Formula=((("Alert batt" > 0) * ((x % 1000) < 500)) > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Timer
+[Source65]
+Name=Status warn @V
+Units=
+Format=
+Formula=("Status warn" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source66]
+Name=Status ok @V
+Units=
+Format=
+Formula=("Status ok" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source67]
+Name=Alert any @V
+Units=
+Format=
+Formula=("Alert any" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source68]
+Name=Alert batt @V
+Units=
+Format=
+Formula=("Alert batt" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source69]
+Name=Alert cpu @V
+Units=
+Format=
+Formula=("Alert cpu" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source70]
+Name=Alert gpu @V
+Units=
+Format=
+Formula=("Alert gpu" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source71]
+Name=Alert loss @V
+Units=
+Format=
+Formula=("Alert loss" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source72]
+Name=Alert ram @V
+Units=
+Format=
+Formula=("Alert ram" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source73]
+Name=CPU warn @V
+Units=
+Format=
+Formula=("CPU warn" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source74]
+Name=CPU hot pulse @V
+Units=
+Format=
+Formula=((("CPU temp" > 85) * ((x % 800) < 400)) > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Timer
+[Source75]
+Name=GPU warn @V
+Units=
+Format=
+Formula=("GPU warn" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source76]
+Name=GPU hot pulse @V
+Units=
+Format=
+Formula=(((("GPU temp" > 80) + ("GPU hotspot" > 95) > 0) * ((x % 800) < 400)) > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Timer
+[Source77]
+Name=Lim T @V
+Units=
+Format=
+Formula=("Lim T" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source78]
+Name=Lim P @V
+Units=
+Format=
+Formula=("Lim P" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source79]
+Name=Lim V @V
+Units=
+Format=
+Formula=("Lim V" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source80]
+Name=VRAM warn @V
+Units=
+Format=
+Formula=("VRAM warn" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source81]
+Name=RAM warn @V
+Units=
+Format=
+Formula=("RAM warn" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source82]
+Name=DISK warn @V
+Units=
+Format=
+Formula=("DISK warn" > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Stub
+[Source83]
+Name=Blink @V
+Units=
+Format=
+Formula=((("Alert any" > 0) * ((x % 1000) < 500)) > 0) * ("Mode V" > 0)
+Provider=HAL
+ID=Timer
+[Source84]
+Name=Blink @H
+Units=
+Format=
+Formula=((("Alert any" > 0) * ((x % 1000) < 500)) > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Timer
+[Source85]
+Name=CPU warn @H
+Units=
+Format=
+Formula=("CPU warn" > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Stub
+[Source86]
+Name=CPU hot pulse @H
+Units=
+Format=
+Formula=((("CPU temp" > 85) * ((x % 800) < 400)) > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Timer
+[Source87]
+Name=GPU warn @H
+Units=
+Format=
+Formula=("GPU warn" > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Stub
+[Source88]
+Name=GPU hot pulse @H
+Units=
+Format=
+Formula=(((("GPU temp" > 80) + ("GPU hotspot" > 95) > 0) * ((x % 800) < 400)) > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Timer
+[Source89]
+Name=VRAM warn @H
+Units=
+Format=
+Formula=("VRAM warn" > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Stub
+[Source90]
+Name=RAM warn @H
+Units=
+Format=
+Formula=("RAM warn" > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Stub
+[Source91]
+Name=Status warn @H
+Units=
+Format=
+Formula=("Status warn" > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Stub
+[Source92]
+Name=Status ok @H
+Units=
+Format=
+Formula=("Status ok" > 0) * ("Mode H" > 0)
+Provider=HAL
+ID=Stub
+[Layer0]
+Name=[V] Panel sprite
+Text=<I=0,0,0,512,504,382>
+PositionX=0
+PositionY=0
+ExtentX=252
+ExtentY=191
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer1]
+Name=[V] Header alarm
+Text=
+PositionX=6
+PositionY=1
+ExtentX=235
+ExtentY=12
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+BgndColor=B0FF1F33
+RefreshPeriod=100
+VisibilitySource=Blink batt @V
+[Layer2]
+Name=[V] logo icon
+Text=<I=0,0,0,0,128,128>
+PositionX=-1
+PositionY=1
+ExtentX=12
+ExtentY=12
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer3]
+Name=[V] Title
+Text=<C=FFECE5DD>EVIL<C=FFFF1F33>//<C=FFECE5DD>OS
+PositionX=-3
+PositionY=0
+ExtentX=-9
+ExtentY=14
+ExtentOrigin=3
+FixedAlignment=1
+Size=100
+VisibilitySource=Mode V
+[Layer4]
+Name=[V] Clock
+Text=<C=FF94848A>%Time24%
+PositionX=-15
+PositionY=0
+ExtentX=-8
+ExtentY=14
+ExtentOrigin=4
+FixedAlignment=1
+Size=80
+VisibilitySource=Mode V
+[Layer5]
+Name=[V] Status dot red
+Text=<I=0,0,640,256,128,128>
+PositionX=-24
+PositionY=3
+ExtentX=8
+ExtentY=8
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer6]
+Name=[V] Status dot amber
+Text=<I=0,0,512,256,128,128>
+PositionX=-24
+PositionY=3
+ExtentX=8
+ExtentY=8
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Status warn @V
+[Layer7]
+Name=[V] Status dot green
+Text=<I=0,0,384,256,128,128>
+PositionX=-24
+PositionY=3
+ExtentX=8
+ExtentY=8
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Status ok @V
+[Layer8]
+Name=[V] FPS
+Text=<FR><S=-72><C=FF94848A> FPS<S>
+PositionX=-28
+PositionY=0
+ExtentX=-9
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=100
+TextColor=FF1F33,,30,FF1F33,30,50,FFB020,50,60,ECE5DD,60,(Framerate,1)
+VisibilitySource=Mode V
+[Layer9]
+Name=[V] Game
+Text=<C=FFECE5DD><EXE><C=FF9C0F1D>  ·  <C=FF94848A><API><C=FF9C0F1D>  ·  <C=FF94848A><RES>
+PositionX=-1
+PositionY=14
+ExtentX=-36
+ExtentY=10
+ExtentOrigin=3
+FixedAlignment=1
+Size=65
+VisibilitySource=Mode V
+[Layer10]
+Name=[V] Alert bg
+Text=
+PositionX=1
+PositionY=14
+ExtentX=245
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+BgndColor=FFB0101F
+VisibilitySource=Alert any @V
+[Layer11]
+Name=[V] Alert batt text
+Text=<C=FFECE5DD>ON BATTERY
+PositionX=-1
+PositionY=14
+ExtentX=-9
+ExtentY=10
+ExtentOrigin=3
+FixedAlignment=1
+Size=65
+VisibilitySource=Alert batt @V
+[Layer12]
+Name=[V] Alert cpu text
+Text=<C=FFECE5DD>CPU HOT
+PositionX=-9
+PositionY=14
+ExtentX=-9
+ExtentY=10
+ExtentOrigin=3
+FixedAlignment=1
+Size=65
+VisibilitySource=Alert cpu @V
+[Layer13]
+Name=[V] Alert gpu text
+Text=<C=FFECE5DD>GPU HOT
+PositionX=-15
+PositionY=14
+ExtentX=-9
+ExtentY=10
+ExtentOrigin=3
+FixedAlignment=1
+Size=65
+VisibilitySource=Alert gpu @V
+[Layer14]
+Name=[V] Alert loss text
+Text=<C=FFECE5DD>PACKET LOSS
+PositionX=-21
+PositionY=14
+ExtentX=-9
+ExtentY=10
+ExtentOrigin=3
+FixedAlignment=1
+Size=65
+VisibilitySource=Alert loss @V
+[Layer15]
+Name=[V] Alert ram text
+Text=<C=FFECE5DD>RAM FULL
+PositionX=-30
+PositionY=14
+ExtentX=-9
+ExtentY=10
+ExtentOrigin=3
+FixedAlignment=1
+Size=65
+VisibilitySource=Alert ram @V
+[Layer16]
+Name=[V] FT label
+Text=<C=FFC4162A>FRAME
+PositionX=-1
+PositionY=24
+ExtentX=-5
+ExtentY=11
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer17]
+Name=[V] FT value
+Text=<FT><S=-72><C=FF94848A> ms<S>
+PositionX=-6
+PositionY=24
+ExtentX=-8
+ExtentY=11
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,12,ECE5DD,12,20,FFB020,20,34,FF1F33,34,(Frametime,1)
+VisibilitySource=Mode V
+[Layer18]
+Name=[V] FT spikes
+Text=<G=Frametime,-22,9,0,25,60,1>
+PositionX=-15
+PositionY=25
+ExtentX=-22
+ExtentY=9
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FFB020
+VisibilitySource=Mode V
+[Layer19]
+Name=[V] FT graph
+Text=<G=Frametime,-22,9,0,0,50,0>
+PositionX=-15
+PositionY=25
+ExtentX=-22
+ExtentY=9
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FF1F33
+VisibilitySource=Mode V
+[Layer20]
+Name=[V] CPU icon
+Text=<I=0,0,128,0,128,128>
+PositionX=-1
+PositionY=36
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer21]
+Name=[V] CPU icon (CPU warn)
+Text=<I=0,0,128,384,128,128>
+PositionX=-1
+PositionY=36
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=CPU warn @V
+[Layer22]
+Name=[V] CPU icon (CPU hot pulse)
+Text=<I=0,0,128,256,128,128>
+PositionX=-1
+PositionY=36
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=100
+VisibilitySource=CPU hot pulse @V
+[Layer23]
+Name=[V] CPU title
+Text=<C=FFC4162A>CPU  <C=D9ECE5DD>AMD RYZEN 7 9800X3D
+PositionX=-6
+PositionY=35
+ExtentX=-24
+ExtentY=8
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer24]
+Name=[V] CPU usage
+Text=%CPU usage%<S=-72><C=FF94848A>%<S>
+PositionX=-6
+PositionY=42
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,55,ECE5DD,55,75,FFB020,75,90,FF1F33,90,(CPU usage,1)
+VisibilitySource=Mode V
+[Layer25]
+Name=[V] CPU bar
+Text=<G=CPU usage,-7,5,0,0,100,18>
+PositionX=-30
+PositionY=45
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,30,9C0F1D,30,75,FF1F33,75,100,FF6B7A,100,(CPU usage,1)
+VisibilitySource=Mode V
+[Layer26]
+Name=[V] CPU bar seg
+Text=<I=0,0,768,256,128,128>
+PositionX=-30
+PositionY=45
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer27]
+Name=[V] CPU temp spark
+Text=<G=CPU temp,-7,6,0,30,95,0>
+PositionX=-30
+PositionY=36
+ExtentX=-7
+ExtentY=6
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,60,9C0F1D,60,75,FFB020,75,88,FF1F33,88,(CPU temp,1)
+VisibilitySource=Mode V
+[Layer28]
+Name=[V] CPU clock
+Text=<C=FFECE5DD>%CPU clock%<S=-72><C=FF94848A> MHz<S>
+PositionX=-10
+PositionY=42
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer29]
+Name=[V] CPU temp
+Text=%CPU temp%<S=-72><C=FF94848A>°<S>
+PositionX=-18
+PositionY=42
+ExtentX=-5
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,55,ECE5DD,55,75,FFB020,75,88,FF1F33,88,(CPU temp,1)
+VisibilitySource=Mode V
+[Layer30]
+Name=[V] CPU power
+Text=<C=FFECE5DD>%CPU power%<S=-72><C=FF94848A>W<S>
+PositionX=-23
+PositionY=42
+ExtentX=-6
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer31]
+Name=[V] GPU icon
+Text=<I=0,0,256,0,128,128>
+PositionX=-1
+PositionY=55
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer32]
+Name=[V] GPU icon (GPU warn)
+Text=<I=0,0,256,384,128,128>
+PositionX=-1
+PositionY=55
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=GPU warn @V
+[Layer33]
+Name=[V] GPU icon (GPU hot pulse)
+Text=<I=0,0,256,256,128,128>
+PositionX=-1
+PositionY=55
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=100
+VisibilitySource=GPU hot pulse @V
+[Layer34]
+Name=[V] GPU title
+Text=<C=FFC4162A>GPU  <C=D9ECE5DD>NVIDIA RTX 4070 TI SUPER
+PositionX=-6
+PositionY=54
+ExtentX=-24
+ExtentY=8
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer35]
+Name=[V] GPU usage
+Text=%GPU1 usage%<S=-72><C=FF94848A>%<S>
+PositionX=-6
+PositionY=61
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,55,ECE5DD,55,75,FFB020,75,90,FF1F33,90,(GPU1 usage,1)
+VisibilitySource=Mode V
+[Layer36]
+Name=[V] GPU bar
+Text=<G=GPU1 usage,-7,5,0,0,100,18>
+PositionX=-30
+PositionY=64
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,30,9C0F1D,30,75,FF1F33,75,100,FF6B7A,100,(GPU1 usage,1)
+VisibilitySource=Mode V
+[Layer37]
+Name=[V] GPU bar seg
+Text=<I=0,0,768,256,128,128>
+PositionX=-30
+PositionY=64
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer38]
+Name=[V] GPU temp spark
+Text=<G=GPU temp,-7,6,0,30,90,0>
+PositionX=-30
+PositionY=55
+ExtentX=-7
+ExtentY=6
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,57,9C0F1D,57,72,FFB020,72,83,FF1F33,83,(GPU temp,1)
+VisibilitySource=Mode V
+[Layer39]
+Name=[V] GPU badge Lim T
+Text=<C=FFFF1F33>THERMAL
+PositionX=-24
+PositionY=54
+ExtentX=-5
+ExtentY=8
+ExtentOrigin=5
+FixedAlignment=1
+Size=55
+VisibilitySource=Lim T @V
+[Layer40]
+Name=[V] GPU badge Lim P
+Text=<C=FFFFB020>PWR LIM
+PositionX=-24
+PositionY=54
+ExtentX=-5
+ExtentY=8
+ExtentOrigin=5
+FixedAlignment=1
+Size=55
+VisibilitySource=Lim P @V
+[Layer41]
+Name=[V] GPU badge Lim V
+Text=<C=FFFFB020>VOLT LIM
+PositionX=-24
+PositionY=54
+ExtentX=-5
+ExtentY=8
+ExtentOrigin=5
+FixedAlignment=1
+Size=55
+VisibilitySource=Lim V @V
+[Layer42]
+Name=[V] GPU clock
+Text=<C=FFECE5DD>%GPU1 clock%<S=-72><C=FF94848A> MHz<S>
+PositionX=-10
+PositionY=61
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer43]
+Name=[V] GPU temp
+Text=%GPU temp%<S=-72><C=FF94848A>°<S>
+PositionX=-18
+PositionY=61
+ExtentX=-5
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,52,ECE5DD,52,72,FFB020,72,83,FF1F33,83,(GPU temp,1)
+VisibilitySource=Mode V
+[Layer44]
+Name=[V] GPU power
+Text=<C=FFECE5DD>%GPU power%<S=-72><C=FF94848A>W<S>
+PositionX=-23
+PositionY=61
+ExtentX=-6
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer45]
+Name=[V] VRAM icon
+Text=<I=0,0,512,0,128,128>
+PositionX=-2
+PositionY=73
+ExtentX=11
+ExtentY=11
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer46]
+Name=[V] VRAM icon (VRAM warn)
+Text=<I=0,0,512,384,128,128>
+PositionX=-2
+PositionY=73
+ExtentX=11
+ExtentY=11
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=VRAM warn @V
+[Layer47]
+Name=[V] VRAM label
+Text=<C=FFC4162A>VRAM
+PositionX=-6
+PositionY=73
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer48]
+Name=[V] VRAM used
+Text=<C=FFECE5DD>%GPU1 memory usage%<C=FF94848A>/%GPU1 total memory%<S=-72><C=FF94848A>G<S>
+PositionX=-10
+PositionY=73
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer49]
+Name=[V] VRAM temp
+Text=%VRAM temp%<S=-72><C=FF94848A>°<S>
+PositionX=-18
+PositionY=73
+ExtentX=-5
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,65,ECE5DD,65,85,FFB020,85,95,FF1F33,95,(VRAM temp,1)
+VisibilitySource=Mode V
+[Layer50]
+Name=[V] VRAM pct
+Text=%GPU1 memory usage percent%<S=-72><C=FF94848A>%<S>
+PositionX=-23
+PositionY=73
+ExtentX=-6
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,60,ECE5DD,60,80,FFB020,80,92,FF1F33,92,(GPU1 memory usage percent,1)
+VisibilitySource=Mode V
+[Layer51]
+Name=[V] VRAM bar
+Text=<G=GPU1 memory usage percent,-7,5,0,0,100,18>
+PositionX=-30
+PositionY=76
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,32,9C0F1D,32,80,FF1F33,80,100,FF6B7A,100,(GPU1 memory usage percent,1)
+VisibilitySource=Mode V
+[Layer52]
+Name=[V] VRAM bar seg
+Text=<I=0,0,768,256,128,128>
+PositionX=-30
+PositionY=76
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer53]
+Name=[V] RAM icon
+Text=<I=0,0,384,0,128,128>
+PositionX=-1
+PositionY=86
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer54]
+Name=[V] RAM icon (RAM warn)
+Text=<I=0,0,384,384,128,128>
+PositionX=-1
+PositionY=86
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=RAM warn @V
+[Layer55]
+Name=[V] RAM title
+Text=<C=FFC4162A>RAM  <C=D9ECE5DD>VENGEANCE DDR5 2x32GB
+PositionX=-6
+PositionY=85
+ExtentX=-24
+ExtentY=8
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer56]
+Name=[V] RAM usage
+Text=%RAM usage percent%<S=-72><C=FF94848A>%<S>
+PositionX=-6
+PositionY=92
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,60,ECE5DD,60,80,FFB020,80,92,FF1F33,92,(RAM usage percent,1)
+VisibilitySource=Mode V
+[Layer57]
+Name=[V] RAM bar
+Text=<G=RAM usage percent,-7,5,0,0,100,18>
+PositionX=-30
+PositionY=95
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,32,9C0F1D,32,80,FF1F33,80,100,FF6B7A,100,(RAM usage percent,1)
+VisibilitySource=Mode V
+[Layer58]
+Name=[V] RAM bar seg
+Text=<I=0,0,768,256,128,128>
+PositionX=-30
+PositionY=95
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer59]
+Name=[V] RAM clock
+Text=<C=FFECE5DD>%RAM clock%<S=-72><C=FF94848A> MT/s<S>
+PositionX=-10
+PositionY=92
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer60]
+Name=[V] RAM temp
+Text=%RAM temp%<S=-72><C=FF94848A>°<S>
+PositionX=-18
+PositionY=92
+ExtentX=-5
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,40,ECE5DD,40,60,FFB020,60,75,FF1F33,75,(RAM temp,1)
+VisibilitySource=Mode V
+[Layer61]
+Name=[V] MB prefix
+Text=<C=FF94848A>MB
+PositionX=-24
+PositionY=92
+ExtentX=-3
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer62]
+Name=[V] MB temp
+Text=%MB temp%<S=-72><C=FF94848A>°<S>
+PositionX=-25
+PositionY=92
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,40,ECE5DD,40,60,FFB020,60,75,FF1F33,75,(MB temp,1)
+VisibilitySource=Mode V
+[Layer63]
+Name=[V] DISK icon
+Text=<I=0,0,0,256,128,128>
+PositionX=-2
+PositionY=104
+ExtentX=11
+ExtentY=11
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer64]
+Name=[V] DISK icon (DISK warn)
+Text=<I=0,0,640,384,128,128>
+PositionX=-2
+PositionY=104
+ExtentX=11
+ExtentY=11
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=DISK warn @V
+[Layer65]
+Name=[V] DISK label
+Text=<C=FFC4162A>DISK
+PositionX=-6
+PositionY=104
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer66]
+Name=[V] Disk rate
+Text=<C=FFECE5DD>%Disk rate%<S=-72><C=FF94848A> MB/s<S>
+PositionX=-10
+PositionY=104
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer67]
+Name=[V] Disk temp
+Text=%Disk temp%<S=-72><C=FF94848A>°<S>
+PositionX=-18
+PositionY=104
+ExtentX=-5
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,40,ECE5DD,40,60,FFB020,60,70,FF1F33,70,(Disk temp,1)
+VisibilitySource=Mode V
+[Layer68]
+Name=[V] Disk active
+Text=%Disk active%<S=-72><C=FF94848A>%<S>
+PositionX=-23
+PositionY=104
+ExtentX=-6
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,50,ECE5DD,50,70,FFB020,70,95,FF1F33,95,(Disk active,1)
+VisibilitySource=Mode V
+[Layer69]
+Name=[V] Disk bar
+Text=<G=Disk active,-7,5,0,0,100,18>
+PositionX=-30
+PositionY=107
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,28,9C0F1D,28,70,FF1F33,70,100,FF6B7A,100,(Disk active,1)
+VisibilitySource=Mode V
+[Layer70]
+Name=[V] Disk bar seg
+Text=<I=0,0,768,256,128,128>
+PositionX=-30
+PositionY=107
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer71]
+Name=[V] NET icon
+Text=<I=0,0,0,384,128,128>
+PositionX=-2
+PositionY=116
+ExtentX=11
+ExtentY=11
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer72]
+Name=[V] NET label
+Text=<C=FFC4162A>NET
+PositionX=-6
+PositionY=116
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer73]
+Name=[V] DL prefix
+Text=<C=FF94848A>DL
+PositionX=-10
+PositionY=116
+ExtentX=-3
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer74]
+Name=[V] Net down
+Text=<C=FFECE5DD>%Net down%<S=-72><C=FF94848A> Mb<S>
+PositionX=-10
+PositionY=116
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer75]
+Name=[V] UL prefix
+Text=<C=FF94848A>UL
+PositionX=-19
+PositionY=116
+ExtentX=-3
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer76]
+Name=[V] Net up
+Text=<C=FFECE5DD>%Net up%<S=-72><C=FF94848A> Mb/s<S>
+PositionX=-19
+PositionY=116
+ExtentX=-10
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer77]
+Name=[V] Net graph
+Text=<G=Net down,-7,9,0,0,100,1>
+PositionX=-30
+PositionY=117
+ExtentX=-7
+ExtentY=9
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FF1F33
+VisibilitySource=Mode V
+[Layer78]
+Name=[V] Fan CPU icon
+Text=<AI=Fan anim CPU,0,0,0,7,0,128,128,128,8,8,0>
+PositionX=6
+PositionY=128
+ExtentX=13
+ExtentY=13
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=16
+VisibilitySource=Mode V
+[Layer79]
+Name=[V] Fan CPU label
+Text=<C=FFC4162A>CPU
+PositionX=22
+PositionY=128
+ExtentX=20
+ExtentY=13
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer80]
+Name=[V] Fan CPU value
+Text=<C=FFECE5DD>%CPU fan rpm%<S=-72><C=FF94848A> rpm<S>
+PositionX=40
+PositionY=128
+ExtentX=40
+ExtentY=13
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer81]
+Name=[V] Fan SYS icon
+Text=<AI=Fan anim SYS,0,0,0,7,0,128,128,128,8,8,0>
+PositionX=84
+PositionY=128
+ExtentX=13
+ExtentY=13
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=16
+VisibilitySource=Mode V
+[Layer82]
+Name=[V] Fan SYS label
+Text=<C=FFC4162A>SYS
+PositionX=100
+PositionY=128
+ExtentX=20
+ExtentY=13
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer83]
+Name=[V] Fan SYS value
+Text=<C=FFECE5DD>%SYS fan rpm%<S=-72><C=FF94848A> rpm<S>
+PositionX=118
+PositionY=128
+ExtentX=40
+ExtentY=13
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer84]
+Name=[V] Fan GPU icon
+Text=<AI=Fan anim GPU,0,0,0,7,0,128,128,128,8,8,0>
+PositionX=162
+PositionY=128
+ExtentX=13
+ExtentY=13
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=16
+VisibilitySource=Mode V
+[Layer85]
+Name=[V] Fan GPU label
+Text=<C=FFC4162A>GPU
+PositionX=178
+PositionY=128
+ExtentX=20
+ExtentY=13
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer86]
+Name=[V] Fan GPU value
+Text=<C=FFECE5DD>%GPU1 fan speed%<S=-72><C=FF94848A>%<S>
+PositionX=196
+PositionY=128
+ExtentX=40
+ExtentY=13
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer87]
+Name=[V] UPS icon
+Text=<I=0,0,640,0,128,128>
+PositionX=-1
+PositionY=142
+ExtentX=17
+ExtentY=17
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer88]
+Name=[V] UPS title
+Text=<C=FFC4162A>UPS  <C=D9ECE5DD>APC BGM2200B
+PositionX=-6
+PositionY=141
+ExtentX=-24
+ExtentY=8
+ExtentOrigin=3
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer89]
+Name=[V] UPS status
+Text=<IF UPS on battery><C=FFFF1F33>ON BATTERY<ELSE><C=FF4CFF7A>ONLINE<IF>
+PositionX=-26
+PositionY=141
+ExtentX=-11
+ExtentY=8
+ExtentOrigin=5
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode V
+[Layer90]
+Name=[V] UPS battery
+Text=%UPS battery%<S=-72><C=FF94848A>%<S>
+PositionX=-6
+PositionY=148
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=FF1F33,,20,FF1F33,20,50,FFB020,50,80,ECE5DD,80,(UPS battery,1)
+VisibilitySource=Mode V
+[Layer91]
+Name=[V] UPS runtime
+Text=<C=FFECE5DD>%UPS runtime%<S=-72><C=FF94848A> min left<S>
+PositionX=-10
+PositionY=148
+ExtentX=-13
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode V
+[Layer92]
+Name=[V] UPS bar
+Text=<G=UPS battery,-7,5,0,0,100,18>
+PositionX=-30
+PositionY=151
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FF1F33,,20,FF1F33,20,50,9C0F1D,50,(UPS battery,1)
+VisibilitySource=Mode V
+[Layer93]
+Name=[V] UPS bar seg
+Text=<I=0,0,768,256,128,128>
+PositionX=-30
+PositionY=151
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer94]
+Name=[V] PWR icon
+Text=<I=0,0,896,0,128,128>
+PositionX=-2
+PositionY=160
+ExtentX=11
+ExtentY=11
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer95]
+Name=[V] PWR label
+Text=<C=FFC4162A>PWR
+PositionX=-6
+PositionY=160
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer96]
+Name=[V] Mains voltage
+Text=%UPS input voltage%<S=-72><C=FF94848A>V<S>
+PositionX=-10
+PositionY=160
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=FF1F33,,200,FF1F33,200,210,ECE5DD,210,250,ECE5DD,250,258,FF1F33,258,(UPS input voltage,1)
+VisibilitySource=Mode V
+[Layer97]
+Name=[V] Power watts
+Text=%UPS power%<S=-72><C=FF94848A>W<S>
+PositionX=-18
+PositionY=160
+ExtentX=-5
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,40,ECE5DD,40,60,FFB020,60,85,FF1F33,85,(UPS load,1)
+VisibilitySource=Mode V
+[Layer98]
+Name=[V] Load pct
+Text=%UPS load%<S=-72><C=FF94848A>%<S>
+PositionX=-23
+PositionY=160
+ExtentX=-6
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,40,ECE5DD,40,60,FFB020,60,85,FF1F33,85,(UPS load,1)
+VisibilitySource=Mode V
+[Layer99]
+Name=[V] Load bar
+Text=<G=UPS load,-7,5,0,0,100,18>
+PositionX=-30
+PositionY=163
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=9C0F1D,,24,9C0F1D,24,60,FF1F33,60,100,FF6B7A,100,(UPS load,1)
+VisibilitySource=Mode V
+[Layer100]
+Name=[V] Load bar seg
+Text=<I=0,0,768,256,128,128>
+PositionX=-30
+PositionY=163
+ExtentX=-7
+ExtentY=5
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer101]
+Name=[V] PING icon
+Text=<I=0,0,768,0,128,128>
+PositionX=-2
+PositionY=172
+ExtentX=11
+ExtentY=11
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode V
+[Layer102]
+Name=[V] PING label
+Text=<C=FFC4162A>PING
+PositionX=-6
+PositionY=172
+ExtentX=-4
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer103]
+Name=[V] Ping value
+Text=%Ping ms%<S=-72><C=FF94848A> ms<S>
+PositionX=-10
+PositionY=172
+ExtentX=-8
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=4CFF7A,,40,4CFF7A,40,70.0,FFB020,70.0,100,FF1F33,100,(Ping ms,1)
+VisibilitySource=Mode V
+[Layer104]
+Name=[V] Jitter prefix
+Text=<C=FF94848A>±
+PositionX=-18
+PositionY=172
+ExtentX=-3
+ExtentY=12
+ExtentOrigin=3
+FixedAlignment=1
+Size=72
+VisibilitySource=Mode V
+[Layer105]
+Name=[V] Ping jitter
+Text=%Ping jitter%
+PositionX=-18
+PositionY=172
+ExtentX=-5
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=4CFF7A,,3,4CFF7A,3,11.5,FFB020,11.5,20,FF1F33,20,(Ping jitter,1)
+VisibilitySource=Mode V
+[Layer106]
+Name=[V] Ping loss
+Text=%Ping loss%<S=-72><C=FF94848A>% loss<S>
+PositionX=-23
+PositionY=172
+ExtentX=-6
+ExtentY=12
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=4CFF7A,,0.5,4CFF7A,0.5,2.75,FFB020,2.75,5,FF1F33,5,(Ping loss,1)
+VisibilitySource=Mode V
+[Layer107]
+Name=[V] Ping graph
+Text=<G=Ping ms,-7,9,0,0,100,0>
+PositionX=-30
+PositionY=173
+ExtentX=-7
+ExtentY=9
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=4CFF7A,,40,4CFF7A,40,70.0,FFB020,70.0,100,FF1F33,100,(Ping ms,1)
+VisibilitySource=Mode V
+[Layer108]
+Name=[V] Frame alarm
+Text=<I=0,0,504,512,504,382>
+PositionX=0
+PositionY=0
+ExtentX=252
+ExtentY=191
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=100
+VisibilitySource=Blink @V
+[Layer109]
+Name=[H] Bar bg
+Text=
+PositionX=0
+PositionY=0
+ExtentX=-116
+ExtentY=14
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+BgndColor=EB050506
+BorderColor=CC9C0F1D
+BorderSize=1
+VisibilitySource=Mode H
+[Layer110]
+Name=[H] Bar accent
+Text=
+PositionX=0
+PositionY=0
+ExtentX=2
+ExtentY=14
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+BgndColor=FFFF1F33
+VisibilitySource=Mode H
+[Layer111]
+Name=[H] Bar alarm
+Text=
+PositionX=0
+PositionY=0
+ExtentX=-116
+ExtentY=14
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+BorderColor=FFFF1F33
+BorderSize=3
+RefreshPeriod=100
+VisibilitySource=Blink @H
+[Layer112]
+Name=[H] logo icon
+Text=<I=0,0,0,0,128,128>
+PositionX=-1
+PositionY=1
+ExtentX=12
+ExtentY=12
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer113]
+Name=[H] FPS
+Text=<FR><S=-72><C=FF94848A> FPS<S>
+PositionX=-3
+PositionY=0
+ExtentX=-8
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=100
+TextColor=FF1F33,,30,FF1F33,30,50,FFB020,50,60,ECE5DD,60,(Framerate,1)
+VisibilitySource=Mode H
+[Layer114]
+Name=[H] FT
+Text=<FT><S=-72><C=FF94848A> ms<S>
+PositionX=-11
+PositionY=0
+ExtentX=-7
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,12,ECE5DD,12,20,FFB020,20,34,FF1F33,34,(Frametime,1)
+VisibilitySource=Mode H
+[Layer115]
+Name=[H] CPU icon
+Text=<I=0,0,128,0,128,128>
+PositionX=-19
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer116]
+Name=[H] CPU icon (CPU warn)
+Text=<I=0,0,128,384,128,128>
+PositionX=-19
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=CPU warn @H
+[Layer117]
+Name=[H] CPU icon (CPU hot pulse)
+Text=<I=0,0,128,256,128,128>
+PositionX=-19
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=100
+VisibilitySource=CPU hot pulse @H
+[Layer118]
+Name=[H] CPU usage
+Text=%CPU usage%<S=-72><C=FF94848A>%<S>
+PositionX=-21
+PositionY=0
+ExtentX=-4
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,55,ECE5DD,55,75,FFB020,75,90,FF1F33,90,(CPU usage,1)
+VisibilitySource=Mode H
+[Layer119]
+Name=[H] CPU temp
+Text=%CPU temp%<S=-72><C=FF94848A>°<S>
+PositionX=-25
+PositionY=0
+ExtentX=-4
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,55,ECE5DD,55,75,FFB020,75,88,FF1F33,88,(CPU temp,1)
+VisibilitySource=Mode H
+[Layer120]
+Name=[H] GPU icon
+Text=<I=0,0,256,0,128,128>
+PositionX=-30
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer121]
+Name=[H] GPU icon (GPU warn)
+Text=<I=0,0,256,384,128,128>
+PositionX=-30
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=GPU warn @H
+[Layer122]
+Name=[H] GPU icon (GPU hot pulse)
+Text=<I=0,0,256,256,128,128>
+PositionX=-30
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+RefreshPeriod=100
+VisibilitySource=GPU hot pulse @H
+[Layer123]
+Name=[H] GPU usage
+Text=%GPU1 usage%<S=-72><C=FF94848A>%<S>
+PositionX=-32
+PositionY=0
+ExtentX=-4
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,55,ECE5DD,55,75,FFB020,75,90,FF1F33,90,(GPU1 usage,1)
+VisibilitySource=Mode H
+[Layer124]
+Name=[H] GPU temp
+Text=%GPU temp%<S=-72><C=FF94848A>°<S>
+PositionX=-36
+PositionY=0
+ExtentX=-4
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,52,ECE5DD,52,72,FFB020,72,83,FF1F33,83,(GPU temp,1)
+VisibilitySource=Mode H
+[Layer125]
+Name=[H] GPU power
+Text=<C=FFECE5DD>%GPU power%<S=-72><C=FF94848A>W<S>
+PositionX=-40
+PositionY=0
+ExtentX=-5
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode H
+[Layer126]
+Name=[H] VRAM icon
+Text=<I=0,0,512,0,128,128>
+PositionX=-46
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer127]
+Name=[H] VRAM icon (VRAM warn)
+Text=<I=0,0,512,384,128,128>
+PositionX=-46
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=VRAM warn @H
+[Layer128]
+Name=[H] VRAM
+Text=<C=FFECE5DD>%GPU1 memory usage%<C=FF94848A>/%GPU1 total memory%<S=-72><C=FF94848A>G<S>
+PositionX=-48
+PositionY=0
+ExtentX=-8
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode H
+[Layer129]
+Name=[H] RAM icon
+Text=<I=0,0,384,0,128,128>
+PositionX=-57
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer130]
+Name=[H] RAM icon (RAM warn)
+Text=<I=0,0,384,384,128,128>
+PositionX=-57
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=RAM warn @H
+[Layer131]
+Name=[H] RAM
+Text=%RAM usage percent%<S=-72><C=FF94848A>%<S>
+PositionX=-59
+PositionY=0
+ExtentX=-4
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,60,ECE5DD,60,80,FFB020,80,92,FF1F33,92,(RAM usage percent,1)
+VisibilitySource=Mode H
+[Layer132]
+Name=[H] NET icon
+Text=<I=0,0,0,384,128,128>
+PositionX=-64
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer133]
+Name=[H] NET
+Text=<C=FFECE5DD>%Net down%<S=-72><C=FF94848A> Mb<S>
+PositionX=-66
+PositionY=0
+ExtentX=-8
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+VisibilitySource=Mode H
+[Layer134]
+Name=[H] PING icon
+Text=<I=0,0,768,0,128,128>
+PositionX=-75
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer135]
+Name=[H] PING
+Text=%Ping ms%<S=-72><C=FF94848A> ms<S>
+PositionX=-77
+PositionY=0
+ExtentX=-6
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=4CFF7A,,40,4CFF7A,40,70.0,FFB020,70.0,100,FF1F33,100,(Ping ms,1)
+VisibilitySource=Mode H
+[Layer136]
+Name=[H] PWR icon
+Text=<I=0,0,896,0,128,128>
+PositionX=-84
+PositionY=2
+ExtentX=10
+ExtentY=10
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer137]
+Name=[H] UPS W
+Text=%UPS power%<S=-72><C=FF94848A>W<S>
+PositionX=-86
+PositionY=0
+ExtentX=-5
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=85
+TextColor=ECE5DD,,40,ECE5DD,40,60,FFB020,60,85,FF1F33,85,(UPS load,1)
+VisibilitySource=Mode H
+[Layer138]
+Name=[H] UPS st
+Text=<IF UPS on battery><C=FFFF1F33>BATTERY<ELSE><C=FF4CFF7A>ONLINE<IF>
+PositionX=-92
+PositionY=0
+ExtentX=-8
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=60
+VisibilitySource=Mode H
+[Layer139]
+Name=[H] Clock
+Text=<C=FF94848A>%Time24%
+PositionX=-101
+PositionY=0
+ExtentX=-9
+ExtentY=14
+ExtentOrigin=5
+FixedAlignment=1
+Size=80
+VisibilitySource=Mode H
+[Layer140]
+Name=[H] Status dot red
+Text=<I=0,0,640,256,128,128>
+PositionX=-111
+PositionY=3
+ExtentX=8
+ExtentY=8
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Mode H
+[Layer141]
+Name=[H] Status dot amber
+Text=<I=0,0,512,256,128,128>
+PositionX=-111
+PositionY=3
+ExtentX=8
+ExtentY=8
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Status warn @H
+[Layer142]
+Name=[H] Status dot green
+Text=<I=0,0,384,256,128,128>
+PositionX=-111
+PositionY=3
+ExtentX=8
+ExtentY=8
+ExtentOrigin=0
+FixedAlignment=1
+Size=20
+VisibilitySource=Status ok @H
